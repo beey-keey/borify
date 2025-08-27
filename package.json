@@ -1,6 +1,8 @@
 {
   "name": "borify",
   "version": "1.0.0",
+  "description": "UI component library",
+  "author": "Boryana Kircheva",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
