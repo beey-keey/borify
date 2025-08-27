@@ -6,8 +6,8 @@
       >
         <!-- Logo & Title -->
         <!-- <div class="flex items-center space-x-3">
-          <img src="/favicon.png" alt="Law firm Logo" class="h-8 w-8" />
-          <h1 class="font-brand text-2xl text-emerald-600">Law firm</h1>
+          <img src="/favicon.png" alt="Borify component library Logo" class="h-8 w-8" />
+          <h1 class="font-brand text-2xl text-emerald-600">Borify component library</h1>
         </div> -->
 
         <!-- Desktop Nav -->
@@ -76,7 +76,6 @@
     <div class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
       <img
         src="/law-firm.webp"
-        alt="Law Firm"
         class="w-full h-64 md:h-80 lg:h-96 xl:h-[500px] 2xl:h-[600px] object-cover"
       />
     </div>
@@ -125,7 +124,7 @@
       <!-- <LoginScreen v-if="$route.path === '/login'" /> -->
       <router-view />
       <footer class="mt-10 text-center text-sm text-gray-600">
-        <!-- <p>&copy; 2025 Law firm.</p> -->
+        <!-- <p>&copy; 2025 Borify component library</p> -->
       </footer>
     </main>
   </div>
