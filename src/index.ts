@@ -1,4 +1,5 @@
-import HeroCard from './views/HeroCard.vue';
+import HeroCard from "./views/HeroCard.vue";
+import CorporateClients from "./views/CorporateClients.vue";
+import IndividualClients from "./views/IndividualClients.vue";
 
-export { HeroCard };
-export default HeroCard;
+export { HeroCard, CorporateClients, IndividualClients };

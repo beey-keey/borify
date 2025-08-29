@@ -28,7 +28,7 @@
 
         <!-- Mobile button -->
         <button
-          class="text-green-700 focus:outline-none md:hidden"
+          class="bg-red-200 focus:outline-none md:hidden"
           @click="showMenu = !showMenu"
           aria-label="Toggle menu"
         >
@@ -51,7 +51,7 @@
       <!-- Mobile menu -->
       <div
         v-if="showMenu"
-        class="space-y-2 px-6 pb-4 text-lg font-semibold md:hidden"
+        class="md:hidden space-y-2 px-6 pb-4 text-lg font-semibold bg-pink-400"
       >
         <router-link
           v-for="link in navLinks"
@@ -120,6 +120,14 @@
       </div>
     </div>
 
+    <div
+      class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
+    ></div>
+
+    <div class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+      <Home />
+    </div>
+
     <main class="p-6">
       <!-- <LoginScreen v-if="$route.path === '/login'" /> -->
       <router-view />
@@ -151,11 +159,11 @@ const activeTab = ref("home");
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap"); */
 
-.font-brand {
+/* .font-brand {
   font-family: "Cormorant Garamond", serif;
-}
+} */
 </style>
 
 <style>

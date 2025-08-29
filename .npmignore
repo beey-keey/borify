@@ -1,0 +1,17 @@
+# Exclude all node_modules from publish
+node_modules/
+templates/borify/node_modules/
+# Exclude logs and temp files
+*.log
+npm-debug.log*
+
+# Exclude build artifacts (add more if needed)
+dist/
+build/
+
+# Exclude OS files
+.DS_Store
+Thumbs.db
+
+# Exclude other unwanted files
+*.tgz

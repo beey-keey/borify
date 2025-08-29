@@ -1,0 +1,267 @@
+:root {
+  --font-color: #000000;
+  --font-error-color: #e52828;
+  --background-color: #f0f3f6;
+  --settings-background-color: #f9fafb;
+  --disabled-color: #bdc4ca;
+  --chat-history-bg-color: #ffffff;
+  --chat-response-bg-color: #f0f3f6;
+  --chat-question-bg-color: #d3d8dd;
+  --terms-and-conditions-bg-color: #e5e8ed;
+  --settings-border-color: rgba(229, 231, 235, 1);
+  --copytext-font-size-small: 16px !important;
+  --copytext-font-size-smaller: 14px !important;
+  --radio-button-center-selected: #ffd000 !important;
+  --radio-button-surface-selected: #ffffff !important;
+  --icon-button-color-foreground-hover: var(--color-neutral-steel-700) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'LiebherrHead-Black', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 34px;
+}
+
+* {
+  font-synthesis: none !important;
+}
+
+ul,
+ol,
+li {
+  line-height: 24px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding-left: 20px;
+  list-style: square outside;
+}
+
+ol {
+  padding-left: 20px;
+  list-style: decimal outside;
+}
+
+li > p {
+  display: inline;
+}
+
+.line-break {
+  display: block;
+  height: 0.5em;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: #888e94;
+  text-decoration: underline;
+}
+
+.text {
+  color: var(--font-color);
+  font-family: 'LiebherrText-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+body {
+  color: var(--font-color);
+  font-family: 'LiebherrText-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.disabled-text {
+  color: var(--disabled-color);
+}
+
+.small {
+  color: var(--font-color);
+  font-family: 'LiebherrText-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.small-bold {
+  color: var(--font-color);
+  font-family: 'LiebherrHead-Black', sans-serif;
+  font-size: 14px;
+}
+
+.tiny {
+  color: var(--font-color);
+  font-family: 'LiebherrText-Regular', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tiny-bold {
+  color: var(--font-color);
+  font-family: 'LiebherrText-Bold', sans-serif;
+  font-size: 12px;
+}
+
+.product {
+  font-family: 'LiebherrHead-Black', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.very-tiny {
+  font-family: 'LiebherrText-Regular', sans-serif;
+  font-size: 9px;
+}
+
+.main-background {
+  background-color: var(--background-color);
+  height: 100%;
+}
+
+.header {
+  height: 76px;
+}
+
+.router {
+  height: calc(100vh - 90px);
+}
+
+.lh-link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.lh-link-unstyled {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text-link {
+  text-transform: uppercase;
+  font-family: var(--font-family-text);
+  font-weight: bold;
+  color: var(--color-steel-800);
+  text-decoration: none;
+  font-size: var(--font-size-textlink);
+  line-height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-link:not(.text-link--disabled):hover {
+  opacity: 0.7;
+}
+
+.text-link--underlined {
+  text-decoration: underline var(--color-steel-800) 0.1rem;
+  text-underline-offset: 0.5rem;
+}
+
+.text-link--disabled {
+  color: var(--color-steel-400);
+  cursor: default;
+}
+
+.hr-line {
+  border-top: 1px solid var(--settings-border-color);
+}
+
+.settings-title {
+  font-size: 40px;
+  font-family: 'LiebherrHead-Black', sans-serif;
+}
+
+.selected-border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000000;
+}
+
+.break-anywhere {
+  word-break: break-word;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-weight: bold;
+}
+
+tr {
+  background-color: #ffffff;
+}
+
+tr:hover {
+  background-color: #e5e8ed;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-weight: bold;
+  background-color: #f0f3f6;
+  color: black;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'LiebherrHead-Black', sans-serif;
+}
+
+@supports (overflow-wrap: anywhere) {
+  .break-anywhere {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}

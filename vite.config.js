@@ -14,8 +14,8 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
       copyDtsFiles: true,
-      outDir: "dist"
-    })
+      outDir: "dist",
+    }),
   ],
   base: "/",
   build: {
@@ -24,17 +24,17 @@ export default defineConfig({
       entry: path.resolve(__dirname, "src/index.ts"),
       name: "Borify",
       fileName: (format) => `index.${format}.js`,
-      formats: ["es", "cjs"]
+      formats: ["es", "cjs"],
     },
     rollupOptions: {
       // Externalize deps that shouldn't be bundled
       external: ["vue"],
       output: {
         globals: {
-          vue: "Vue"
-        }
-      }
-    }
+          vue: "Vue",
+        },
+      },
+    },
   },
   resolve: {
     alias: {
